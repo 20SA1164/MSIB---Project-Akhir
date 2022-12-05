@@ -1,0 +1,48 @@
+.navbar{
+    background-color: #e7e6e1;
+    font-family: "CrimsonPro-ExtraBold";
+}
+*{
+    background-color: #e7e6e1;
+}
+.nav-item{
+    font-family: 'NunitoSans-Regular';
+}
+@font-face {
+    font-family: "CrimsonPro-ExtraBold";
+    src: url("../font/CrimsonPro-ExtraBold.ttf");
+}
+@font-face{
+    font-family: "Lato-Regular";
+    src: url("../font/Lato-Regular.ttf")
+}
+@font-face {
+    font-family: "NunitoSans-Regular";
+    src: url("../font/NunitoSans-Regular.ttf");
+}
+h1{
+    font-family: "CrimsonPro-ExtraBold";
+    font-size: 35px;
+}
+.judul{
+    margin-top: 150px;
+    margin-right: 100px;
+}
+.column{
+    margin-top: 50px;
+}
+.form_1{
+    width: 100px;
+}
+.back{
+    margin-top: 50px;
+    color: white;
+    width: 100px;
+    margin-left: 200px;
+}
+.pred{
+    margin-top: -60px;
+    margin-left: 903px;
+    color: white;
+    width: 100px;
+}

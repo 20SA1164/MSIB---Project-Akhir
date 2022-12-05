@@ -1,0 +1,66 @@
+.navbar{
+    background-color: #e7e6e1;
+    
+}
+*{
+    background-color: #e7e6e1;
+}
+footer{
+    background-color: #314e52;
+    Height: 100px;
+    Width: auto;
+}
+@font-face {
+    font-family: "CrimsonPro-ExtraBold";
+    src: url("../font/CrimsonPro-ExtraBold.ttf");
+}
+.navbar{
+    font-family: 'CrimsonPro-ExtraBold';
+}
+h1{
+    margin-right: 200px;
+    font-size: 35px;
+}
+h2{
+    font-family: 'CrimsonPro-ExtraBold';
+    color: #314e52;
+}
+@font-face{
+    font-family: "Lato-Regular";
+    src: url("../font/Lato-Regular.ttf")
+}
+p{
+    font-family: 'Lato-Regular';
+}
+img{
+    position: relative;
+}
+@font-face {
+    font-family: "NunitoSans-Regular";
+    src: url("../font/NunitoSans-Regular.ttf");
+}
+.nav-item{
+    font-family: 'NunitoSans-Regular';
+}
+a{
+    color: black; 
+}
+.collapse navbar-collapse{
+    margin-top: 100px;
+}
+#team{
+    margin-bottom: 100px;
+}
+.carousel-caption {
+    background-color: transparent;
+}
+.tulisan {
+    background-color: transparent;
+    color: black;
+}
+.carousel-indicators {
+    background-color: transparent;
+}
+.about {
+    font-size: 20px;
+}

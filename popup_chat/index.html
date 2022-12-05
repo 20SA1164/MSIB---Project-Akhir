@@ -1,0 +1,57 @@
+<DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css" />
+	<!-- 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icon.min.css"> -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css" integrity="sha512-mRuH7OxetZB1XiSaKZ2fxENKgxVvx3ffpzX0FUcaP6GBqAuqOLc8YiC/3EVTUVt5p5mIRT5D9i4LitZUQKWNCg==" crossorigin="anonymous" />
+		<title>Chat Window</title>
+
+	</head>
+	<body>
+		
+
+		<section>
+			<h1>Chat Popup</h1>
+			<p>Click on the chat button to start chatting</p>
+
+			<button class="chat-btn">
+				<!-- used google material icon for comment -->
+				<i class="material-icons">
+					comment
+				</i>
+			</button>
+
+			<!-- pop up -->
+			<div class="chat-popup">
+				<!-- start red chat badge -->
+				<div class="badge">1</div>
+
+				<!-- inside chat box area -->
+				<div class="chat-area">
+					<div class="income-msg">
+						<img src="img/tom.jpeg" class="avatar" alt="">
+						<span class="msg">Hi, How can i help you?</span>
+					</div>
+				</div>
+
+				<!-- input area into chat -->
+				<div class="input-area">
+					<input type="text">
+					<!-- <button id="emoji-btn"> &#128521; </button> -->
+					<button class="submit">
+						<i class="material-icons">
+							send
+						</i>
+					</button>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- javascript libraries -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.1.1/dist/index.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>

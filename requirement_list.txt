@@ -1,0 +1,13 @@
+certifi==2020.6.20
+click==7.1.2
+future==0.18.2
+joblib @ file:///tmp/build/80754af9/joblib_1594236160679/work
+mkl-fft==1.1.0
+mkl-random==1.1.1
+mkl-service==2.3.0
+nltk @ file:///tmp/build/80754af9/nltk_1592496090529/work
+numpy==1.18.5
+regex @ file:///tmp/build/80754af9/regex_1593435547652/work
+six==1.15.0
+torch==1.5.1
+tqdm @ file:///tmp/build/80754af9/tqdm_1593446365756/work

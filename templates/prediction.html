@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/predict.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Prediksi</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <img src="{{ url_for('static',filename='img/Logo1.png')}}" alt="Credit Syariah" width="90" height="90" class="d-inline-block align-text-top">
+        <h1>Prediksi</h1>
+          <form class="d-flex justify-content-end" role="search">
+            <input class="form-control me-2" style="width: 250px; margin-left: 450px; border-radius: 50px;" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" style="color: #314e52;" type="submit">Search</button>
+          </form>
+        </div>
+      <div class="container-fluid ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="nav nav-pills justify-content-end" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" style="color: black; margin-left: 5px;" href="/#home">Home</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" style="color: black; margin-left: 10px;" href="/#introduction">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: black; margin-left: 0px;" href="/#prediksi">Predict</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: black; margin-left: 10px; margin-right: 1px;" href="/#team">Team</a>
+            </li>
+            </li>
+          </ul>
+      </div>
+    </nav>
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h5 class="lg:w-2/3 mx-auto leading-relaxed text-base judul">Silahkan Inputkan Data Anda untuk Memprediksi</h5>
+          </div>
+          <div class="container column">
+            <form action='/predict' method='POST'>
+              <div class="col-mb-3">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="exampleFormControlInput1" style="margin-left: 215px;" class="form-label">Jenis Kelamin</label>
+                    <select class="form-select" style="width: 385px; margin-left: 215px;" id="gender" name="gender" aria-label="Default select example">
+                    <option selected>-- Select Jenis Kelamin --</option>
+                    <option value="Male">Laki - laki</option>
+                    <option value="Female">Perempuan</option>
+                   </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="exampleFormControlInput1" class="form-label"> Status Pernikahan</label>
+                    <select class="form-select" style="width: 385px;" id="married" name="married" aria-label="Default select example">
+                      <option selected>-- Select Status Pernikahan --</option>
+                      <option value="Yes">Sudah Menikah</option>
+                      <option value="No">Belum Menikah</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label for="exampleFormControlInput1" style="margin-left: 215px;" class="form-label">Tanggungan</label>
+                    <select class="form-select" style="width: 385px; margin-left: 215px;"id="dependents" name="dependents" aria-label="Default select example">
+                      <option selected>-- Select Tanggungan --</option>
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3+">3+</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <label for="exampleFormControlInput1" class="form-label">Pendidikan (S1)</label>
+                    <select class="form-select" style="width: 385px; margin-left: -12px;" id="education" name="education" aria-label="Default select example">
+                      <option selected>-- Select Pendidikan (S1) --</option>
+                      <option value="Graduate">Lulus</option>
+                      <option value="Not Graduate">Tidak Lulus</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label for="exampleFormControlInput1" style="margin-left: 215px;" class="form-label">Wiraswasta</label>
+                    <select class="form-select" style="width: 385px; margin-left: 215px;" id="employed" name="employed" aria-label="Default select example">
+                      <option selected>-- Select Wiraswasta --</option>
+                      <option value="Yes">Ya</option>
+                      <option value="No">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <label for="exampleFormControlInput1" class="form-label">Pinjaman Lain</label>
+                      <select class="form-select" style="width: 385px; margin-left: -12px;" id="credit" name="credit" aria-label="Default select example">
+                        <option selected>-- select Pinjaman Lain --</option>
+                        <option value="1.000000">Ada</option>
+                        <option value="0.000000">Tidak Ada</option>
+                      </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label for="exampleFormControlInput1" style="margin-left: 215px;" class="form-label">Area Tempat Tinggal</label>
+                      <select class="form-select" style="width: 385px; margin-left: 215px;" id="area" name="area" aria-label="Default select example">
+                        <option selected>-- Select Area Tempat Tinggal --</option>
+                        <option value="Semiurban">Semi Perkotaan</option>
+                        <option value="Urban">Perkotaan</option>
+                        <option value="Rural">Pedesaan</option>
+                      </select>
+                  </div>
+                  <div class="col">
+                    <label for="exampleFormControlInput1" class="form-label">Pendapatan Pelamar</label>
+                    <input type="text" class="form-control" style="width: 385px; margin-left: -12px;" id="ApplicantIncome" name="ApplicantIncome">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label for="exampleFormControlInput1" style="margin-left: 210px;" class="form-label">Pendapatan Pasangan</label>
+                    <input type="text" class="form-control" style="width: 247px; margin-left: 210px;" id="CoapplicantIncome" name="CoapplicantIncome">
+                  </div>
+                  <div class="col">
+                    <label for="exampleFormControlInput1" class="form-label">Jumlah Pinjaman</label>
+                    <input type="text" class="form-control" style="width: 247px;" id="LoanAmount" name="LoanAmount">
+                  </div>
+                  <div class="col">
+                    <label for="exampleFormControlInput1" class="form-label">Jangka Waktu Pinjaman</label>
+                    <input type="text" class="form-control" style="width: 247px; margin-right: 200px;" id="Loan_Amount_Term" name="Loan_Amount_Term" >
+                  </div>
+              </div> 
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <a class="btn btn-warning back" href="./" style="color: white;" role="button">Back</a>
+                  </div>
+                  <div class="col" style="margin-right: 50px;">
+                    <button type="submit" class="btn btn-warning pred" style="color: white;">Predict</button>
+                  </div>
+                </div>
+              </div>   
+            </form>
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <h5><b>{{prediction_text}}</b></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  </body>
+</html>

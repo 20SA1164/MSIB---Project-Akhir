@@ -1,0 +1,75 @@
+{
+    "intents": [{
+            "tag": "sapaan",
+            "patterns": ["hai", "halo", "tes","cek","hi", "Hello", "permisi"],
+            "responses": ["hai", "iya", "ada yang bisa saya bantu?","halo","monggo"],
+            "context": [""]
+        },
+        {
+            "tag": "salam",
+            "patterns": ["Assalamualaikum"],
+            "responses": ["Waalaikum Salam Warrahmatullahi Wabarakatuh"],
+            "context": [""]
+        },
+        {
+            "tag": "terimakasih",
+            "patterns": ["terimakasih", "sangat membantu", "terimakasih untuk informasinya"],
+            "responses": ["sama-sama", "senang bisa membantu anda", "dengan senang hati"],
+            "context": [""]
+        },
+        {
+            "tag": "",
+            "patterns": [" "],
+            "responses": ["maaf saya tidak bisa memahami kata-kata anda", "maaf bisa diulangi lagi pertanyaannya", "anda belum memberi pertanyaan"],
+            "context": [""]
+        },
+        {
+            "tag": "tanya",
+            "patterns": ["Apa yang bisa kamu lakukan?"],
+            "responses": ["Saya bisa membantu anda untuk menjawab beberapa pertanyaan tentang Peminjaman Syariah"],
+            "context": [""]
+        },
+        {
+            "tag": "pengertian",
+            "patterns": ["Apa itu peminjaman syariah", "Pengertian peminjaman syariah", "peminjaman syariah adalah", "pengertian" ],
+            "responses": ["Pinjaman syariah adalah pinjaman dana yang memiliki sistem pengembalian dana dan tenor kredit yang sesuai dengan prinsip syariah"],
+            "context": [""]
+        },
+        {
+            "tag": "manfaat",
+            "patterns": ["Apakah manfaat peminjaman syariah ?","Manfaat pinjaman syariah","manfaat" ],
+            "responses": ["Kredit modal syariah tanpa atau dengan jaminan memiliki tingkat risiko yang jauh lebih kecil daripada bank konvensional. Ini karena, bank syariah akan memberikan kredit sekaligus bertanggung jawab atas jumlah kerugian hingga sebesar 50% tidak ada beban bunga dan administratif sesuai syariat islam."],
+            "context": [""]
+        },
+        {
+            "tag": "pengajuan",
+            "patterns": ["bagaimana cara mengajukan peminjaman syariah","cara pengajuan","cara mengajukan pinjaman","pengajuan" ],
+            "responses": ["Melengkapi persyaratan administrasi seperti menyerahkan dokumen identitas (KTP dan KK), slip gaji, dan NPWP. Apabila belum memahami produk syariah, Sobat Pintar dapat berkunjung ke kantor Bank Syariah terdekat dan berkonsultasi secara langsung. Perhatikan sistem dan ketentuan pinjaman, mulai dari minimal dana dan maksimal dana pinjaman, tenor tempo, dan sebagainya. Kemudian, bank akan memberikan sebuah surat perjanjian pinjaman apabila Sobat Pintar sudah memenuhi persyaratan dan pengecekan. Surat tersebut berisi berbagai aturan seperti bagi hasil dan konsekuensi apabila terjadi kecurangan. Apabila Sobat Pintar menyetujui persyaratan tersebut, kalian bisa menandatangani perjanjian. Setelah menandatangani surat, bank akan mengirimkan dana pinjaman secara tunai kepada Sobat Pintar. Sobat Pintar wajib mengembalikan pinjaman apabila sudah mendapatkan keuntungan."],
+            "context": [""]
+        },
+        {
+            "tag": "riba",
+            "patterns": ["bank apa saja yang pinjamannya terhindar dari riba ?","bank yang pinjamannya terhindar dari riba", "riba"],
+            "responses": ["bank yang terhindar dari pinjaman riba yaitu : 1. Pinjaman BRI Syariah 2. Pinjaman BNI Syariah 3. Pinjaman Bank Mandiri Syariah"],
+            "context": [""]
+        },
+        {
+            "tag": "akad",
+            "patterns": ["akad yang digunakan dalam peminjaman syariah","akad pada peminjaman syariah","akad"],
+            "responses": ["Akad yang digunakan dalam peminjaman syariah yaitu : 1. Akad Murabahah 2. Akad Ijarah Wa Itiqna 3. Akad Musyarakah Mutanaqishah"],
+            "context": [""]
+        },
+        {
+            "tag": "cara_kerja",
+            "patterns": ["Bagaimana Cara Kerja Program Prediksi Peminjaman ini?","cara kerja","cara kerja program"],
+            "responses": ["Cara kerjanya pengguna cukup memasukkan data informasi yang dibutuhkan, kemudian pilih submit untuk memperoleh hasil"],
+            "context": [""]
+        },
+        {
+            "tag": "fitur",
+            "patterns": ["Adakah fitur lain yang di sediakan", "fitur lain"],
+            "responses": ["Fitur lain yang ada pada program ini ialah berupa layanan pusat bantuan sebagai alat bantu untuk mengetahui informasi mengenai peminjaman syariah maupun tentang program."],
+            "context": [""]
+        }
+    ]
+}

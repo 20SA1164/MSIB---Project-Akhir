@@ -1,7 +1,7 @@
 certifi==2020.6.20
 click==7.1.2
 future==0.18.2
-joblib==1.2.0
+joblib==1.1.0
 mkl-fft==1.1.0
 mkl-random==1.2.2
 mkl-service==2.4.0

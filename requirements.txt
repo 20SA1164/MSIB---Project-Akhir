@@ -11,3 +11,4 @@ regex @ file:///tmp/build/80754af9/regex_1593435547652/work
 six==1.15.0
 torch==1.5.1
 tqdm @ file:///tmp/build/80754af9/tqdm_1593446365756/work
+flask

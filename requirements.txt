@@ -1,14 +1,14 @@
 certifi==2020.6.20
 click==7.1.2
 future==0.18.2
-joblib @ file:///tmp/build/80754af9/joblib_1594236160679/work
+joblib==1.2.0
 mkl-fft==1.1.0
-mkl-random==1.1.1
-mkl-service==2.3.0
-nltk @ file:///tmp/build/80754af9/nltk_1592496090529/work
+mkl-random==1.2.2
+mkl-service==2.4.0
+nltk==3.7.0
 numpy==1.18.5
-regex @ file:///tmp/build/80754af9/regex_1593435547652/work
+regex==2022.10.31
 six==1.15.0
 torch==1.5.1
-tqdm @ file:///tmp/build/80754af9/tqdm_1593446365756/work
-flask
+tqdm==4.64.1
+flask==2.2.2

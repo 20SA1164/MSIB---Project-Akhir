@@ -64,3 +64,15 @@ a{
 .about {
     font-size: 20px;
 }
+
+/* Responsif Breakpoint */
+
+/* ukuran tablet */
+
+@media screen and (max-width: 576px){
+    .aman{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    
+}

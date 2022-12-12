@@ -11,33 +11,38 @@
 		<title>Credit Syariah</title>
 	</head>
 	<body>
+		<!-- NAVBAR -->
 		<nav class="navbar navbar-expand-lg fixed-top">
 			<div class="container-fluid">
-			  <img src="{{ url_for('static',filename='img/Logo.png')}}" alt="Credit Syariah" width="170" height="90" class="d-inline-block align-text-top">
-			  <!-- <h1 style="font-size: 30px; margin-left: -9d20px;">Credit Syariah</h1> -->
-			  </div>
-			<div class="container-fluid ">
-			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<img src="static/img/logo1.png" alt="Logo Aplikasi" style="width: 50px; height: 50px;" srcset="">
+			  <a class="navbar-brand" href="#">Credit Syariah</a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			  </button>
-			  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-				<ul class="nav nav-pills justify-content-end" id="pills-tab" role="tablist">
-				  <li class="nav-item" role="presentation">
-					<a class="nav-link" style="color: black; margin-left: 150px;" href="#home">Home</a>
-				  </li>
-				  <li class="nav-item" role="presentation">
-					<a class="nav-link" style="color: black; margin-left: 10px;" href="#introduction">About</a>
+			  <div class="container" style="width: 790px;">
+
+			  </div>
+			  <div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#">Home</a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link" style="color: black; margin-left: 0px;" href="#prediksi">Predict</a>
+					<a class="nav-link" href="#introduction">About</a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link" style="color: black; margin-left: 10px; margin-right: 1px;" href="#team">Team</a>
+					<a class="nav-link" href="#prediksi">Predict</a>
 				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#team">Team</a>
 				  </li>
 				</ul>
+			  </div>
 			</div>
-		  </nav>
+		</nav>
+		<!-- END NAVBAR -->
+
+		<!-- HOME SECTION -->
 		<section id="home">
 			<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
 				<div class="carousel-indicators">
@@ -47,15 +52,15 @@
 			  	</div>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img src="{{ url_for('static',filename='img/Slide 1.png')}}" class="d-block w-100" style= "margin-top: 40px;" alt="...">
+						<img src="{{ url_for('static',filename='img/Slide 1.png')}}" class="img-fluid d-block w-100" style= "margin-top: 40px;" alt="...">
 						<div class="carousel-caption d-none d-md-block"></div>
 					</div>
 					<div class="carousel-item">
-						<img src="{{ url_for('static',filename='img/Slide 2.png')}}" class="d-block w-100" style= "margin-top: 40px;" alt="...">
+						<img src="{{ url_for('static',filename='img/Slide 2.png')}}" class="img-fluid d-block w-100" style= "margin-top: 40px;" alt="...">
 						<div class="carousel-caption d-none d-md-block"></div>
 					</div>
 					<div class="carousel-item">
-						<img src="{{ url_for('static',filename='img/Slide 3.png')}}" style= "margin-top: 50px;" class="d-block w-100" alt="...">
+						<img src="{{ url_for('static',filename='img/Slide 3.png')}}" style= "margin-top: 50px;" class="img-fluid d-block w-100" alt="...">
 						<div class="carousel-caption d-none d-md-block"></div>
 					</div>
 				</div>
@@ -69,19 +74,22 @@
 			  	</button>
 			</div>
 		</section>
+		<!-- END HOME SECTION -->
+
+		<!-- INTRODUCTION SECTION -->
 		<section id="introduction">
 			<div class="container" style="height: 20px;"></div>
-			<h2 style="font-size: 70px; margin-top: 70px; text-align: center; ">
+			<h2 style="font-size: 70px; margin-top: 70px; text-align: center;" class="md">
 			  About Credit Syariah
 			</h2>
-			<p class="text-center" style="font-size: 20px; margin-left: 200px; margin-right: 200px;">
+			<p class="text-center intro-text" style="font-size: 20px; margin-left: 200px; margin-right: 200px;">
 			  Credit Syariah merupakan layanan untuk memprediksi layak atau tidaknya konsumen mengajukan pinjaman dengan berdasarkan data - data yang akan dimasukkan serta di lengkapi layanan bantuan yang dapat membantu dalam memberikan informasi tambahan.
 			</p>
 			<div class="container">
 			  <div class="row">
 				<div class="col-md-4">
 				  <div class="container" style="border-radius: 20px; background-color: white; height: 300px;">
-					<img src="{{ url_for('static',filename='img/Aman.png')}}" style="background-color: white; margin-left: 160px; margin-top: 40px;" width="80px" height="80px" alt="Aman">
+					<img src="{{ url_for('static',filename='img/Aman.png')}}" class="img-fluid aman" style="background-color: white; margin-left: 160px; margin-top: 40px;" width="80px" height="100%" alt="Aman">
 					<h4 style="background-color: white; text-align: center; margin-top: 10px;">
 					  AMAN
 					</h4>
@@ -227,7 +235,8 @@
 							<span class="msg">Silahkan Ajukan Pertanyaan!</span>
 						</div>
 					</div>
-		
+					<!-- Akhir inside chat box area -->
+					
 					<!-- input area into chat -->
 					<div class="input-area">
 						<input type="text" tabindex="-1">

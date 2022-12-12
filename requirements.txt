@@ -1,0 +1,14 @@
+certifi
+click
+future
+joblib
+mkl-fft
+mkl-random
+mkl-service
+nltk
+numpy
+regex
+six
+torch
+tqdm
+flask

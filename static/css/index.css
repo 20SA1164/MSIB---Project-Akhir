@@ -1,6 +1,9 @@
 .navbar{
     background-color: #e7e6e1;
-    
+}
+#home{
+    width: 100%;
+    height: 100%;
 }
 *{
     background-color: #e7e6e1;
@@ -32,6 +35,13 @@ h2{
 p{
     font-family: 'Lato-Regular';
 }
+#aman{
+    background-color: white; 
+    margin-left: 160px; 
+    margin-top: 40px;
+    width: 80px;
+    height: 80px;
+}
 img{
     position: relative;
 }
@@ -62,17 +72,397 @@ a{
     background-color: transparent;
 }
 .about {
+    background-color: white; 
+    text-align: center; 
+    margin-left: 50px; 
+    margin-right: 50px; 
+    margin-top: 30px;
     font-size: 20px;
 }
+.intro-text{
+    font-size: 20px; 
+    margin-left: 200px; 
+    margin-right: 200px;
+}
+.intro-title{
+    font-size: 90px; 
+    margin-top: 70px; 
+    text-align: center;
+}
+.btn {
+    margin-top: 5px; 
+    margin-left: 120px; 
+    margin-bottom: 30px;
+}
 
+.apex {
+    border-radius: 20px; 
+    background-color: white; 
+    height: 300px;
+}
+.gambar-prediksi{
+    margin-top: 100px; 
+    margin-left: 40px;
+    width: 300;
+    height: 500;
+}
+.prediksi-title{
+    text-align: center; 
+    margin-top: 10px;
+}
+.prediksi-text {
+    text-align: center; 
+    font-weight: 100;
+}
+.kotakan {
+    width: 100%;
+}
+.team-title {
+    font-size: 90px; 
+    margin-top: 70px; 
+    text-align: center;
+}
+.gambar-anggota{
+    border-radius: 200px; 
+    border-width: 100px; 
+    width: 200px; 
+    height: 190px;
+}
+.team-text-1 {
+    margin-left: 20px; 
+    margin-top: 20px;
+}
+.team-cap-1{
+    margin-left: 25px; 
+    font-weight: 400
+}
+.team-text-2{
+    margin-left: 20px; 
+    margin-top: 20px;
+}
+.team-cap-2 {
+    margin-left: 80px; 
+    font-weight: 400
+}
+.team-text-3{
+    margin-left: 20px; 
+    margin-top: 20px;
+}
+.team-cap-3 {
+    margin-left: 50px; 
+    font-weight: 400
+}
+.team-text-4 {
+    margin-left: 20px; 
+    margin-top: 20px;
+}
+.team-cap-4{
+    margin-left: 100px; 
+    font-weight: 400
+}
+.sup {
+    font-size: 90px; 
+    margin-top: 10px; 
+    text-align: center;
+}
+.sup-row {
+    margin-left: 60px;
+}
+.col-satu {
+    width: 200px; 
+    height: 190px;
+}
+.kopi {
+    background-color: #314e52; 
+    font-size: 16px; 
+    text-align:center; 
+    margin-top:65px; 
+    color: white;
+}
+.kurang {
+    width: 100%;
+}
+.team-satu{
+    width: 100%;
+}.team-dua{
+    width: 100%;
+}
 /* Responsif Breakpoint */
 
 /* ukuran tablet */
-
-@media screen and (max-width: 576px){
-    .aman{
-        margin-left: 60px;
-        margin-right: 60px;
+@media screen and (max-width: 768px){
+    .col-satu{
+        margin-top: -90px;
+        margin-left: 90px;
+        margin-bottom: 150px;
+        width: 200px; 
+        height: 190px;
     }
-    
+    .sup {
+        font-size: 90px;
+        margin-bottom: 200px;
+        margin-top: 10px; 
+        text-align: center;
+    }
+    .team-cap-4{
+        margin-left: 30px; 
+        font-weight: 400
+    }
+    .team-text-4 {
+        font-size: 17px;
+        margin-right: -50px;
+        margin-left: -25px; 
+        margin-top: 10px;
+    }
+    .team-cap-3 {
+        margin-left: -20px; 
+        font-weight: 400
+    }
+    .team-text-3{
+        font-size: 17px;
+        margin-left: -35px; 
+        margin-top: 10px;
+    }
+    .team-cap-2 {
+        font-size: 15px;
+        margin-left: 40px; 
+        font-weight: 400
+    }
+    .team-text-2{
+        font-size: 17px;
+        margin-left: -5px; 
+        margin-top: 10px; 
+    }
+    .team-cap-1{
+        font-size: 15px;
+        margin-left: 0px; 
+        font-weight: 400;
+    }
+    .team-text-1 {
+        font-size: 17px;
+        margin-left: 0px; 
+        margin-top: 10px;
+    }
+    .gambar-anggota{
+        justify-content: space-between;
+        margin-left: -10px;
+        width: 150px; 
+        height: 150px;
+    }
+    .btn {
+        margin-left: 20px;
+    }
+    .prediksi-text{
+        font-size: 20px;
+        margin-left: -8px;
+    }
+    #aman{
+        margin-left: 70px; 
+        margin-top: 5px;
+        width: 50px;
+        height: 50px;
+    }
+    #home{
+        margin-top: 100px;
+        height: 30%;
+    }
+    .intro-text{
+        font-size: 15px;
+        margin-left: 50px; 
+        margin-right: 50px;
+    }
+    .intro-title{
+        margin-top: 70px;
+        font-size: 50px;
+    }
+    .apex{
+        margin-bottom: 70px;
+        border-radius: 10px; 
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    .about{
+        background-color: white; 
+        text-align: center;
+        margin-right: 15px; 
+        margin-top: 15px;
+        font-size: 14px;
+        margin-left: 15px;
+    }
+    .gambar-prediksi{
+        margin-top: 60px; 
+        margin-left: -10px;
+        width: 200;
+        height: 300;
+    }
+    .prediksi-title{
+        text-align: center; 
+        margin-top: 5px;
+        margin-left: -80px;
+        margin-right: -80px;
+    }
+    .kotakan {
+        margin-right: 80px;
+    }
+    .team-title {
+        font-size: 70px;
+        margin-top: 40px;
+        margin-bottom: -90px;
+    }
+}
+
+/* ukuran mobile */
+@media screen and (max-width: 576px){
+    .team-tiga {
+        margin-top: -430px;
+    }
+    .team-dua{
+        margin-left: 200px;
+        margin-right: -140px;
+    }
+    .team-empat{
+        margin-top: -200px;
+    }
+    .team-satu {
+        margin-left: -120px;
+    }
+    .kurang {
+        width: 0px;
+    }
+    .col-satu{
+        margin-top: -110px;
+        margin-left: 250px;
+        margin-bottom: 120px;
+        width: 180px; 
+        height: 170px;
+    }
+    .col-dua {
+        width: 180px; 
+        height: 170px;
+        margin-right: -200px;
+        margin-left: 590px;
+        margin-top: -270px;
+    }
+    .sup {
+        font-size: 50px;
+        margin-bottom: 200px;
+        margin-top: 10px;
+        margin-left: 350px;
+        text-align: center;
+    }
+    .team-cap-4{
+        margin-left: 420px; 
+        font-weight: 400
+    }
+    .team-text-4 {
+        font-size: 17px;
+        margin-right: -50px;
+        margin-left: 360px; 
+        margin-top: -40px;
+    }
+    .team-cap-3 {
+        margin-left: 380px; 
+        font-weight: 400
+    }
+    .team-text-3{
+        font-size: 17px;
+        margin-left: 360px; 
+        margin-top: -270px;
+    }
+    .team-cap-2 {
+        font-size: 15px;
+        margin-left: 450px; 
+        font-weight: 400
+    }
+    .team-text-2{
+        font-size: 17px;
+        margin-left: 400px; 
+        margin-top: 10px; 
+    }
+    .team-cap-1{
+        font-size: 15px;
+        margin-left: 400px; 
+        font-weight: 400;
+    }
+    .team-text-1 {
+        font-size: 17px;
+        margin-left: 400px; 
+        margin-top: 10px;
+    }
+    .gambar-anggota{
+        margin-left: 380px;
+        width: 150px; 
+        height: 150px;
+    }
+    .btn {
+        margin-left: 399px;
+    }
+    .prediksi-text{
+        font-size: 20px;
+        margin-left: 370px;
+    }
+    #aman{
+        margin-left: 190px; 
+        margin-top: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    #home{
+        margin-top: 50px;
+        margin-bottom: 100px;
+        width:  120%;
+        margin-left: 80px;
+    }
+    .intro-text{
+        font-size: 20px;
+        margin-left: 200px; 
+        margin-right: -150px;
+    }
+    .intro-title{
+        margin-right: -100px;
+        margin-left: 200px;
+        margin-top: 100px;
+        font-size: 50px;
+    }
+    .apex {
+        margin-bottom: -10px;
+        max-width: 450px;
+        height: 250px;
+    }
+    .hola{
+        margin-bottom: 40px;
+        border-radius: 10px; 
+        margin-left: 170px;
+    }
+    .about{
+        background-color: white; 
+        text-align: center;
+        margin-right: 15px; 
+        margin-top: 15px;
+        font-size: 20px;
+        margin-left: 15px;
+    }
+    .gambar-prediksi{
+        margin-top: 60px; 
+        margin-left: 400px;
+        width: 160;
+        height: 300;
+    }
+    .prediksi-title{
+        text-align: center; 
+        margin-top: 5px;
+        margin-left: 290px;
+        margin-right: -80px;
+    }
+    .kotakan {
+        margin-left: 10px;
+        margin-right: 40px;
+    }
+    .team-title {
+        font-size: 50px;
+        margin-top: 40px;
+        margin-bottom: -90px;
+        margin-left: 160px;
+        margin-right: -190px;
+    }
 }
